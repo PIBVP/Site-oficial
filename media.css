@@ -2,7 +2,13 @@
     html{
         font-size: 55%;
         scroll-padding: 7rem;
+        scroll-behavior: smooth;
+
     }
+    body{
+        overflow-x: hidden;
+    }
+    
     .header{
         padding: 0 2rem;
     }
@@ -81,5 +87,7 @@
 @media(max-width: 450px){
     html{
         font-size: 50%;
+        scroll-behavior: smooth;
     }
+    
 }
