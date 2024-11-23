@@ -1,0 +1,76 @@
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+        scroll-padding: 7rem;
+    }
+    .header{
+        padding: 0 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+    .home{
+        padding: 20rem 10rem  5%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .home  .content{
+        width: 50rem;
+    }
+    .home  .content h3{
+        font-size: 4rem;
+    }
+    .doacao{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header{
+        padding: 2rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #000;
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+    }
+    .sobre{
+        gap: 3rem;
+    }
+    .sobre .image{
+        margin-top: 5rem;
+    }
+    .sobre .content .title{
+        font-size: 3rem;
+    }
+    .doacao .box-container .box.second{
+        flex-flow: column;
+    }
+    
+    .professores{
+        padding: 1rem;
+        margin: -1rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
