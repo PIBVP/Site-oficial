@@ -20,6 +20,11 @@
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
+    .heading{
+        text-align: center;
+        margin: 1.5rem;
+        position: relative
+    }
     .home  .content{
         width: 50rem;
     }
@@ -60,6 +65,7 @@
     }
     .header .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+        
     }
     .header .navbar a{
         display: block;
