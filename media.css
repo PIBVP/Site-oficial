@@ -23,6 +23,15 @@
     .doacao{
         padding: 2rem;
     }
+    .conosco .container{
+        display: flex;
+        gap: 0rem;
+        padding: 2rem;
+        
+    }
+    .conosco .container .text{
+        display: none;
+    }
 }
 
 @media(max-width: 768px){

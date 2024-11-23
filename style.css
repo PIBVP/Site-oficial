@@ -457,6 +457,10 @@ section{
     border-radius: 2rem;
     padding: 1rem;
 }
+
+.conosco .container .content .form-control{
+    padding: 1rem .75rem;
+}
 .conosco .container .content .messagem .form-floating>.form-control .form-floating>.form-control-plaintext{
     padding: 1rem .75rem;
 }
