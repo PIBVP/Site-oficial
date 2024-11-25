@@ -9,8 +9,9 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
+    
 }
 
 html{
@@ -18,10 +19,15 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
+    
 }
 
 section{
     padding: 0rem 9%;
+}
+
+body{
+    background: #FFFAFA
 }
 
 /* customização do cabeçalho */
@@ -107,6 +113,7 @@ section{
 .home .image{
     flex: 1 1 42rem;
     position: relative;
+    border-radius: 1rem;
 }
 
 .home .image::before
@@ -126,7 +133,7 @@ section{
 
 .home .image img{
     width: 100%;
-    
+    border-radius: 2rem;
 }
 
 .home .content{
@@ -136,12 +143,14 @@ section{
 .home .content span{
     font-size: 3rem;
     color: rgb(197, 168, 98);
+    margin-bottom: 1.5rem;
 }
 
 .home .content .title{
     font-size: 4rem;
     color: #000;
-    margin-top: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .home .content p{
@@ -165,6 +174,7 @@ section{
 .home .content .box-container .box h3{
     font-size: 2rem;
     color: #000;
+    margin-bottom: 2rem;
 }
 
 .home .content .botton{
@@ -174,6 +184,11 @@ section{
     border-radius: 6rem;
     text-decoration: none;
     padding: 1rem;
+}
+
+.home .content .botton a{
+    text-decoration: none;
+    color: #000;
 }
 
 .home .content .botton:hover{
@@ -214,6 +229,7 @@ section{
 
 .sobre .image img{
     width: 100%;
+    border-radius: 2rem;
     
 }
 
@@ -349,9 +365,10 @@ section{
 }
 
 .professores .box-container .box img{
-    height: 100%;
+    height: 467;
     width: 100%;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .professores .box-container .box .content{

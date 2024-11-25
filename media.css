@@ -23,7 +23,14 @@
     .heading{
         text-align: center;
         margin: 1.5rem;
-        position: relative
+        position: relative;
+        padding-top: ;
+    }
+    .servico .heading{
+        text-align: center;
+        margin: 1.5rem;
+        position: relative;
+        padding-top: 12rem;
     }
     .home  .content{
         width: 50rem;
@@ -42,6 +49,15 @@
     }
     .conosco .container .text{
         display: none;
+    }
+    .equipe{
+        display: flex;
+        width: 50%;
+        height: 50%;
+    }
+    .equipe img{
+        width: 100%;
+        height: 100%;
     }
 }
 

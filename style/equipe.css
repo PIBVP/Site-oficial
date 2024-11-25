@@ -1,0 +1,82 @@
+.equipe{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 1rem;
+    padding-top: 20rem;
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.equipe .carousel.slide .carousel-inner{
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+}
+
+.equipe .carousel.slide .carousel-inner .carousel-item img{
+    border-radius: 2rem;
+}
+
+.servico .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.servico .box-container .box{
+    background: #000;
+}
+
+.servico .box-container .box.second{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.servico .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.servico .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.servico .box-container .box .image img{
+    height: 343px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.servico .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.servico .box-container .box .content img{
+    height: 9rem;
+    margin-bottom: 1rem;
+    filter: invert(1);
+    background: #fff;
+}
+
+.servico .box-container .box .content h3{
+    font-size: 2rem;
+    color: rgb(197, 168, 98);
+    
+
+}
+
+.servico .box-container .box .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
