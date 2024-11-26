@@ -1,0 +1,31 @@
+.header .navbar .dropdown .dropdown-menu a{
+    color: #000;
+}
+
+.dropdown-menu.show {
+    display: none; /* Exibe o dropdown quando ativado */
+
+}
+
+.dropdown > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown > a:after {
+    content: '\25BC'; /* Adiciona uma seta para indicar o dropdown */
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+

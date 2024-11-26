@@ -19,7 +19,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
-    
+    background-color: #EAF4FC;
 }
 
 section{
@@ -27,7 +27,7 @@ section{
 }
 
 body{
-    background: #FFFAFA
+    background-color: #EAF4FC;
 }
 
 /* customização do cabeçalho */
@@ -36,8 +36,20 @@ body{
     border: 1px solid #c5a862;
     background: #c5a862;
     color: #fff;
+    z-index: 10;
+    position: absolute;
 }
 
+.header .navbar .dropdown .dropdown-menu{
+    border-radius: 10%;
+    border: 1px solid #c5a862;
+    background: rgb(0, 0, 0, 0,7);
+    color: #000;
+    position: fixed;
+}
+.header .navbar .dropdown .dropdown-menu a{
+    color: #000;
+}
 /* customizaçao do botao */
 .botton:hover{
     transform: scale(1.1);
@@ -85,11 +97,13 @@ body{
     font-size: 1.7rem;
     color: #fff;
     text-decoration: none;
+    
 }
 
 .header .navbar a:hover{
     background: #c5a862;
     border-radius: 1.5rem;
+    
 }
 
 #menu-btn{
@@ -97,6 +111,7 @@ body{
     color: #fff;
     cursor: pointer;
     display: none;
+
 }
 
 /* Customização home */
@@ -141,13 +156,13 @@ body{
 }
 
 .home .content span{
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(197, 168, 98);
     margin-bottom: 1.5rem;
 }
 
 .home .content .title{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #000;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -416,6 +431,7 @@ body{
     text-align: center;
     margin: 3rem;
     position: relative;
+    padding-top: 0.2rem ;
 }
 
 .heading::before{
@@ -444,7 +460,7 @@ body{
 .conosco .container{
     display: flex;
     gap: 3rem;
-    padding: 12rem;
+    padding: 2rem;
 }
 
 .conosco .container .text{
@@ -495,6 +511,12 @@ body{
 .conosco .content input{
     font-size: 1.5rem;
     color: #c5a862;
+}
+
+.conosco input{
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid #c5a862;
 }
 
 .footer .box-container{
