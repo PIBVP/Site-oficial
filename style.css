@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --cor-primary-dourado: #c5a862;
+    --cor-secundary-branco: #eaf4fc;
+    --cor-third-black: #000;
+    --cor-four-cinza: #aaa;
+
+    --cor-primary-rgb: rgb(197, 168, 98);
+    --cor-secundary-rgb: rgb(0, 0, 0, 0.10);
+
+    --font-size-primary: 1.5rem;
+    --font-size-secundary: 3rem;
+    --font-size-third: 2.2rem;
+
+    --style-primary-borda: 1px solid #c5a862;
+
+    --tamanho-primeira-letra: 2rem;
+    --tamanho-segunda-letra: 1.7rem;
+
+
+    --tamanho-de-borda: 
+}
+
 /* customização geral */
 *{
     margin: 0;
@@ -19,7 +41,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
-    background-color: #EAF4FC;
+    background-color: var(--cor-secundary-branco);
 }
 
 section{
@@ -27,28 +49,28 @@ section{
 }
 
 body{
-    background-color: #EAF4FC;
+    background-color: var(--cor-secundary-branco);
 }
 
 /* customização do cabeçalho */
 .header .botton{
     border-radius: 10%;
-    border: 1px solid #c5a862;
-    background: #c5a862;
-    color: #fff;
+    border: var(--style-primary-borda);
+    background: var(--cor-primary-dourado);
+    color: var(--cor-secundary-branco);
     z-index: 10;
     position: absolute;
 }
 
 .header .navbar .dropdown .dropdown-menu{
     border-radius: 10%;
-    border: 1px solid #c5a862;
+    border: var(--style-primary-borda);
     background: rgb(0, 0, 0, 0,7);
-    color: #000;
+    color: var(--cor-third-black);
     position: fixed;
 }
 .header .navbar .dropdown .dropdown-menu a{
-    color: #000;
+    color: var(--cor-third-black);
 }
 /* customizaçao do botao */
 .botton:hover{
@@ -71,13 +93,13 @@ body{
 
 .header .logo{
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: var(--font-size-secundary);
     text-decoration: none;
 }
 
 .header .logo {
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: var(--tamanho-primeira-letra);
+    color: var(--cor-secundary-branco);
     text-decoration: none;
     padding: 1.5rem;
     color: rgb(0, 0, 0, 10);
@@ -85,7 +107,7 @@ body{
 
 .header .logo:hover{
     transform: scale(1.1);
-    background: #c5a862;
+    background: var(--cor-primary-dourado);
     border: 1rem solid;
     border-radius: 5rem;
 }
@@ -94,25 +116,47 @@ body{
 .header .navbar a{
     display: inline-block;
     padding: 1.5rem 2rem;
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: var(--tamanho-segunda-letra);
+    color: var(--cor-secundary-branco);
     text-decoration: none;
     
 }
 
 .header .navbar a:hover{
-    background: #c5a862;
+    background: var(--cor-primary-dourado);
     border-radius: 1.5rem;
     
 }
 
 #menu-btn{
-    font-size: 3rem;
-    color: #fff;
+    font-size: var(--font-size-secundary);
+    color: var(--cor-secundary-branco);
     cursor: pointer;
     display: none;
 
 }
+
+/* .nome{
+    color: var(--cor-secundary-branco);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    font-size: var(--font-size-third);
+    padding-right: 28%;
+    
+}
+
+.nome a{
+    text-decoration: none;
+    color: var(--cor-secundary-branco);
+}
+
+.nome a:hover{
+    text-decoration: none;
+    color: var(--cor-primary-dourado);
+} */
 
 /* Customização home */
 
@@ -136,7 +180,7 @@ body{
     content: '';
     position: absolute;
     z-index: -1;
-    background: rgb(197, 168, 98);
+    background: var(--cor-primary-rgb);
     height: 15rem;
     width: 15rem;
 }
@@ -157,20 +201,20 @@ body{
 
 .home .content span{
     font-size: 2rem;
-    color: rgb(197, 168, 98);
+    color: var(--cor-primary-dourado);
     margin-bottom: 1.5rem;
 }
 
 .home .content .title{
-    font-size: 3rem;
-    color: #000;
+    font-size: var(--font-size-secundary);
+    color: var(--cor-third-black);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .home .content p{
     font-size: 1.8rem;
-    color: #aaa;
+    color: var(--cor-four-cinza);
     padding: 1rem 0;
     line-height: 2;
 }
@@ -188,14 +232,14 @@ body{
 
 .home .content .box-container .box h3{
     font-size: 2rem;
-    color: #000;
+    color: var(--cor-third-black);
     margin-bottom: 2rem;
 }
 
 .home .content .botton{
     font-size: 2rem;
-    color: #000;
-    border: 1px solid #c5a862;
+    color: var(--cor-third-black);
+    border: var(--style-primary-borda);
     border-radius: 6rem;
     text-decoration: none;
     padding: 1rem;
@@ -203,12 +247,12 @@ body{
 
 .home .content .botton a{
     text-decoration: none;
-    color: #000;
+    color: var(--cor-third-black);
 }
 
 .home .content .botton:hover{
     transform: scale(1.1);
-    background: rgb(197, 168, 98)
+    background: var(--cor-primary-rgb)
 }
 
 /* Sobre */
@@ -218,7 +262,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 6rem;
-    background: rgb(0, 0, 0, 10);
+    background: var(--cor-third-black);
     padding: 3rem;
 }
 
@@ -232,7 +276,7 @@ body{
     content: '';
     position: absolute;
     z-index: -1;
-    background: rgb(0, 0, 0, 0.7);
+    background: var(--cor-third-black);
     height: 15rem;
     width: 15rem;
 }
@@ -254,13 +298,13 @@ body{
 
 .sobre .content .title{
     font-size: 4rem;
-    color: #c5a862;
+    color: var(--cor-primary-dourado);
     margin-top: .5rem;
 }
 
 .sobre .content p{
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     padding: 1rem 0;
     line-height: 2;
 }
@@ -278,13 +322,13 @@ body{
 
 .sobre .content .box-container .box h3{
     font-size: 2rem;
-    color: #000;
+    color: var(--cor-third-black);
 }
 
 .sobre .content .botton{
     font-size: 2rem;
     color: #fff;
-    border: 1px solid #c5a862;
+    border: var(--style-primary-borda);
     border-radius: 6rem;
     text-decoration: none;
     padding: 1rem;
@@ -294,7 +338,7 @@ body{
 .sobre .content .botton:hover{
     transform: scale(1.1);
     cursor: pointer;
-    background: #c5a862;
+    background: var(--cor-primary-dourado);
 }
 
 .sobre .content a{
@@ -310,7 +354,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     text-align: center;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     padding: 3.125rem 1.25rem;
     height: 40rem;
     display: flex;
@@ -321,12 +365,12 @@ body{
 
 .doacao span{
     font-size: 2rem;
-    color: #c5a862;
+    color: var(--cor-primary-dourado);
 }
 
 .doacao h3{
     padding-top: 1rem;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     text-transform: uppercase;
     font-size: 3.5rem;
 }
@@ -334,15 +378,15 @@ body{
 .doacao p{
     margin: 1rem auto;
     max-width: 60rem;
-    font-size: 1.5rem;
-    color: #c5a862;
+    font-size: var(--font-size-primary);
+    color: var(--cor-primary-dourado);
     line-height: 2;
 }
 
 .doacao .botton{
-    font-size: 2rem;
+    font-size: var(--tamanho-primeira-letra);
     color: #fff;
-    border: 1px solid #c5a862;
+    border: var(--style-primary-borda);
     border-radius: 6rem;
     text-decoration: none;
     padding: 1rem;
@@ -351,7 +395,7 @@ body{
 
 .doacao .botton:hover{
     transform: scale(1.1);
-    background: #c5a862;
+    background: var(--cor-primary-dourado);
     
 }
 
@@ -391,38 +435,38 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000;
+    background: var(--cor-third-black);
     padding: 2rem;
     transform: translateY(6.5rem);
 }
 
 .professores .box-container .box .content span{
     font-size: 1.5rem;
-    color: rgb(197, 168, 98);
+    color: var(--cor-primary-rgb);
 }
 
 .professores .box-container .box .content h3{
     font-size: 2rem;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     padding-top: 5rem;
 }
 
 .professores .box-container .box .content .share{
     padding-top: 2rem;
     margin-top: 1.5rem;
-    border-top: 0.1rem solid #aaa;
+    border-top: 0.1rem solid var(--cor-four-cinza);
     
 }
 
 .professores .box-container .box .content .share a{
     font-size: 2rem;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     margin-right: 1.5rem;
     text-decoration: none;
 }
 
 .professores .box-container .box .content .share a:hover{
-    color: rgb(197, 168, 98);
+    color: var(--cor-primary-rgb);
 }
 
 /* customização heading */
@@ -442,16 +486,16 @@ body{
     transform: translateY(-50%);
     height: .1rem;
     width: 100%;
-    background: #aaa;
+    background: var(--cor-four-cinza);
     z-index: -1;
 }
 
 .heading span{
-    font-size: 3rem;
-    color: rgb(197, 168, 98);
-    background: #000;
+    font-size: var(--font-size-secundary);
+    color: var(--cor-primary-rgb);
+    background: var(--cor-third-black);
     padding: .5rem 1.5rem;
-    border: 0.1rem solid #aaa;
+    border: 0.1rem solid var(--cor-four-cinza);
     border-radius: .5rem;
 }
 
@@ -473,8 +517,8 @@ body{
 }
 
 .conosco .container .text h3{
-    font-size: 3rem;
-    color: #c5a862;
+    font-size: var(--font-size-secundary);
+    color: var(--cor-primary-dourado);
 }
 
 .conosco .container .text p{
@@ -486,7 +530,7 @@ body{
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    border: 0.1rem solid #c5a862;
+    border: 0.1rem solid var(--cor-primary-dourado);
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -498,71 +542,72 @@ body{
     padding: 1rem .75rem;
 }
 .conosco .content h4{
-    font-size: 3rem;
-    color: #c5a862;
+    font-size: var(--font-size-secundary);
+    color: var(--cor-primary-dourado);
 }
 
 .conosco .content span{
     font-size: 1.5rem;
-    color: #c5a862;
+    color: var(--cor-primary-dourado);
     align-items: center;
 }
 
 .conosco .content input{
     font-size: 1.5rem;
-    color: #c5a862;
+    color: var(--cor-primary-dourado);
 }
 
 .conosco input{
     border-radius: 1rem;
     padding: 1rem;
-    border: 1px solid #c5a862;
+    border: var(--style-primary-borda);
 }
 
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
-    background: #000;
+    background: var(--cor-third-black);
     gap: 2rem;
 }
 
 .footer .box-container .box h3{
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--cor-secundary-branco);
     padding: 1rem 1rem;
 }
 
 .footer .box-container .box .links{
-    font-size: 1.5rem;
+    font-size: var(--font-size-primary);
     display: block;
-    color: #aaa;
+    color: var(--cor-four-cinza);
     padding: 1rem 3rem;
     text-decoration: none;
 }
 
 .footer .box-container .box p{
-    font-size: 1.5rem;
-    color: #aaa;
+    font-size: var(--font-size-primary);
+    color: var(--cor-four-cinza);
     padding: 1rem 3rem;
 }
 
 .footer .box-container .box p i{
     padding-right: 5rem;
-    color: rgb(197, 168, 98);
+    color: var(--cor-primary-rgb);
 }
 
 .footer .box-container .box  a:hover{
-    color: #c5a862;
+    color: var(--cor-primary-dourado);
 }
 
 .footer .box-container .box .share a{
+        
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
     font-size: 1.7rem;
-    color: #fff;
-    background: #111;
+    color: var(--cor-secundary-branco);
+    background: var(--cor-third-black);
     border-radius: 50%;
     margin-right: 5rem;
     text-align: center;
@@ -570,5 +615,5 @@ body{
 }
 
 .footer .box-container .box .share a:hover{
-    background: rgb(197, 168, 98);
+    background: var(--cor-primary-rgb);
 }
