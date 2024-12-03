@@ -44,14 +44,14 @@
     .conosco .container{
         display: flex;
         gap: 0rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
         
     }
     .conosco .heading{
-        padding-top: 1rem;
+        padding-top: 15rem;
     }
     .conosco .container .text{
         display: none;
