@@ -5,6 +5,7 @@
     --cor-secundary-branco: #eaf4fc;
     --cor-third-black: #000;
     --cor-four-cinza: #aaa;
+    --cor-five-red: red
 
     --cor-primary-rgb: rgb(197, 168, 98);
     --cor-secundary-rgb: rgb(0, 0, 0, 0.10);
@@ -200,13 +201,14 @@ body{
 }
 
 .home .content span{
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--cor-primary-dourado);
     margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 .home .content .title{
-    font-size: var(--font-size-secundary);
+    font-size: 4rem;
     color: var(--cor-third-black);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -500,12 +502,95 @@ body{
 }
 
 /* customização de conosco */
+form{
+    width: 100%;
+    max-width: 30rem;
+    padding: 20px;
+}
+label, input, textarea{
+    display: block;
+}
 
+input, textarea, button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    margin-bottom: 15px;
+    padding: 10px;
+}
 .conosco .container{
     display: flex;
     gap: 3rem;
     padding: 2rem;
 }
+
+.conosco .container form{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.conosco .container label, input,textarea,button{
+    display: block;
+}
+
+.conosco .container input,textarea,button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+.conosco .container input,textarea{
+    margin-bottom: 1rem;
+    color: var(--cor-secundary-branco);
+    background: var(--cor-four-cinza);
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.conosco .container input:hover, input:focus, textarea:hover, textarea:focus{
+    outline: none;
+    border-color: var(--cor-primary-dourado);
+    box-shadow: 0 0 0 0.3125rem var(--cor-secundary-branco);
+}
+
+.conosco .container label{
+    margin-bottom: 0.5rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.conosco .container textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+    color: var(--cor-third-black);
+    font-size: 1.5rem;
+}
+.conosco .container button{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 99px;
+    color: var(--cor-secundary-branco);
+    background: var(--cor-primary-dourado);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+
+.conosco .container button:hover, button:focus{
+    outline: none;
+    background: var(--cor-primary-dourado);
+}
+
+.conosco .container button:disabled{
+    cursor: not-allowed;
+    background: var(--cor-four-cinza);
+}
+
 
 .conosco .container .text{
     font-size: 2rem;
@@ -517,7 +602,7 @@ body{
 }
 
 .conosco .container .text h3{
-    font-size: var(--font-size-secundary);
+    font-size: 2rem;
     color: var(--cor-primary-dourado);
 }
 
@@ -529,38 +614,49 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 100%;
+    width: 90%;
     border: 0.1rem solid var(--cor-primary-dourado);
     border-radius: 2rem;
     padding: 1rem;
 }
 
-.conosco .container .content .form-control{
+ /* .conosco .container .content .form-control{
     padding: 1rem .75rem;
 }
 .conosco .container .content .messagem .form-floating>.form-control .form-floating>.form-control-plaintext{
     padding: 1rem .75rem;
-}
+} */
 .conosco .content h4{
     font-size: var(--font-size-secundary);
     color: var(--cor-primary-dourado);
 }
 
-.conosco .content span{
+/* .conosco .content span{
     font-size: 1.5rem;
     color: var(--cor-primary-dourado);
     align-items: center;
-}
+} */
 
-.conosco .content input{
+.conosco .content input, textarea{
     font-size: 1.5rem;
-    color: var(--cor-primary-dourado);
+    color: var(--cor-third-black);
+    width: 35rem;
+    margin-top: 3rem;
 }
 
 .conosco input{
     border-radius: 1rem;
     padding: 1rem;
     border: var(--style-primary-borda);
+}
+.success{
+    color: var(--cor-primary-dourado);
+}
+.error{
+    color: var(--cor-five-red)
+}
+.success, .error{
+    text-align: center;
 }
 
 .footer .box-container{

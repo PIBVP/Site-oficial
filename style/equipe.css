@@ -32,6 +32,11 @@
 
 .servico .box-container .box{
     background: #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .servico .box-container .box.second{
@@ -44,14 +49,17 @@
 }
 
 .servico .box-container .box .image{
-    height: 30rem;
-    width: 100%;
+    height: 33rem;
+    width: 42rem;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .servico .box-container .box .image img{
-    height: 430px;
-    width: 100%;
+    height: 31rem;
+    width: 30rem;
     object-fit: cover;
 }
 

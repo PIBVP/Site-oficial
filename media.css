@@ -1,4 +1,4 @@
-@media(max-width: 991px){
+@media(max-width: 1300px){
     html{
         font-size: 55%;
         scroll-padding: 7rem;
@@ -19,6 +19,7 @@
         padding: 20rem 10rem  5%;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
+        gap: 1rem;
     }
     .heading{
         text-align: center;
@@ -31,6 +32,19 @@
         margin: -0.4rem;
         position: relative;
         padding-top: 14rem;
+    }
+    .servico .box-container .box .image{
+        height: 33rem;
+        width: 42rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .servico .box-container .box .image img{
+        height: 30rem;
+        width: 33rem;
+        object-fit: cover;
     }
     .home .content{
         width: 50rem;
@@ -48,13 +62,30 @@
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        max-width: 150%;
         
     }
-    .conosco .heading{
-        padding-top: 15rem;
+    .conosco .content .content{
+        max-width: 65%;
     }
-    .conosco .container .text{
-        display: none;
+    .conosco .content input{
+        font-size: 1.5rem;
+        color: var(--cor-primary-dourado);
+        width: 32rem;
+    }
+    .conosco .content textarea{
+        font-size: 1.5rem;
+        color: var(--cor-primary-dourado);
+        width: 32rem;
+    }
+    .conosco .content button{
+        font-size: 1.5rem;
+        color:  var(--cor-secundary-branco);
+        width: 32rem;
+        margin-top: 1rem;
+    }
+    .conosco .heading{
+        padding-top: 14rem;
     }
     .equipe{
         display: flex;
@@ -76,6 +107,9 @@
     }
     .header{
         padding: 2rem;
+    }
+    .conosco .container .text{
+        display: none;
     }
     .header .navbar{
         position: absolute;
