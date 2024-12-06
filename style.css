@@ -494,7 +494,7 @@ body{
 
 .heading span{
     font-size: var(--font-size-secundary);
-    color: var(--cor-primary-rgb);
+    color: var(--cor-primary-dourado);
     background: var(--cor-third-black);
     padding: .5rem 1.5rem;
     border: 0.1rem solid var(--cor-four-cinza);

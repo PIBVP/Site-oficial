@@ -159,37 +159,20 @@
             <h3 class="heading"><span>Fale Conosco</span></h3>
         <div class="container">
             <div class="content">
+                
                 <h4 class="title">Envie uma mensagem</h4>
-                <span>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput" class="form-floating is-invalid">Nome*</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu Nome*" required="Nome">
-                    </div>
-                </span>
-                <span>
-                <div class="input-group has-validation">
-                    <span class="input-group-text">E-mail</span>
-                    <div class="form-floating is-invalid">
-                        <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="E-mail*" required="example@email.com">
-                        <label for="floatingInputGroup2"></label>
-                    </div>
-                    <div class="invalid-feedback">
-                        Por favor coloque seu email
-                    </div>
-                </div>
-                </span>
-                <span class="mensagem">
-                    <div class="form-floating">
-                        <textarea name="" id="floatingTextarea" class="form-control" placeholder="Sua mensagem*"></textarea>
-                        <label for="floatingTextarea"></label>
-                    </div>
-                </span>
-
-                <span>
-                    <input type="submit" placeholder="Enviar" class="botton" width="30px">
-                </span>
+                <form action="https://formsubmit.co/andrewpretinho@gmail.com" method="POST" data-form novalidate>
+                <input type="hidden" name="_captcha" value="false">
+                <label for="nome">Nome</label>
+                <input type="text" name="name" id="nome" required="Por favor coloque o nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required="Por favor coloque um email">
+                <label for="messagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+                <button type="submit" data-button>Enviar</button>
+                </form>
             </div>
-
+    
             <div class="text">
                 <h3>Mande uma mensagem para nós</h3>
                 <p>Caso voce deseja nos enviar algo</p>
@@ -197,7 +180,6 @@
             </div>
         </div>
         </section>
-
     </main>
 
     <footer class="footer">
