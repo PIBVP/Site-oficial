@@ -5,7 +5,7 @@
     --cor-secundary-branco: #eaf4fc;
     --cor-third-black: #000;
     --cor-four-cinza: #aaa;
-    --cor-five-red: red
+    --cor-five-red: red;
 
     --cor-primary-rgb: rgb(197, 168, 98);
     --cor-secundary-rgb: rgb(0, 0, 0, 0.10);
@@ -689,7 +689,7 @@ input, textarea, button{
 
 .footer .box-container .box p i{
     padding-right: 5rem;
-    color: var(--cor-primary-rgb);
+    color: var(--cor-primary-dourado);
 }
 
 .footer .box-container .box  a:hover{
