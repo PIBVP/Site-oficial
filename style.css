@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --cor-primary-dourado: #c5a862;
     --cor-secundary-branco: #eaf4fc;
@@ -27,7 +27,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
+    font-family: "Montserrat","Poppins", sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
@@ -409,16 +409,18 @@ body{
 }
 
 .professores .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .professores .box-container .box{
-    height: 40rem;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    max-width: 27em;
+    overflow: hidden;
+    border-radius: 1rem;
 }
 
 .professores .box-container .box:hover .content{
@@ -426,7 +428,6 @@ body{
 }
 
 .professores .box-container .box img{
-    height: 467;
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
@@ -434,12 +435,19 @@ body{
 
 .professores .box-container .box .content{
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     right: 0;
-    background: var(--cor-third-black);
-    padding: 2rem;
-    transform: translateY(6.5rem);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    transform: translateY(100%);
+}
+
+.professores .box-container .box:hover .content {
+    transform: translateY(0);
 }
 
 .professores .box-container .box .content span{
@@ -502,21 +510,23 @@ body{
 }
 
 /* customização de conosco */
-form{
+.form form{
     width: 100%;
     max-width: 30rem;
     padding: 20px;
 }
-label, input, textarea{
+.form label, input, textarea{
     display: block;
+    
 }
 
-input, textarea, button{
+.form input, textarea, button{
     width: 100%;
     font: inherit;
     padding: 1.25rem;
     margin-bottom: 15px;
     padding: 10px;
+    
 }
 .conosco .container{
     display: flex;
@@ -541,7 +551,7 @@ input, textarea, button{
 }
 .conosco .container input,textarea{
     margin-bottom: 1rem;
-    color: var(--cor-secundary-branco);
+    color: var(--cor-third-black);
     background: var(--cor-four-cinza);
     border: 0.125rem solid transparent;
     border-radius: 1.125rem;
@@ -603,7 +613,7 @@ input, textarea, button{
 
 .conosco .container .text h3{
     font-size: 2rem;
-    color: var(--cor-primary-dourado);
+    color: var(--cor-third-black);
 }
 
 .conosco .container .text p{
@@ -712,4 +722,13 @@ input, textarea, button{
 
 .footer .box-container .box .share a:hover{
     background: var(--cor-primary-rgb);
+}
+
+.footer .box-container .box .btn-group .dropdown-menu{
+    background-color: var(--cor-third-black);
+}
+
+.footer .box-container .box .btn-group .dropdown-menu p:hover{
+    background: var(--cor-primary-dourado);
+    color: var(--cor-secundary-branco)
 }
