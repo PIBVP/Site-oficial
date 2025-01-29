@@ -188,37 +188,3 @@
     }
     
 }
-
-/* @media(min-width: 1669px) and (max-width: 2000px){
-    .professores .box-container .box img{
-        width: 27em;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-    .professores .box-container .box .content{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 70%;
-        background: #000;
-        padding: 2rem;
-        transform: translateY(6.5rem);
-    }
-} */
-
-/* @media(){
-    .professores .box-container .box img{
-        width: 60%;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-    .professores .box-container .box .content{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 203px;
-        background: #000;
-        padding: 2rem;
-        transform: translateY(6.5rem);
-    }
-} */
