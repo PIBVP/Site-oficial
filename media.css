@@ -45,6 +45,7 @@
         height: 30rem;
         width: 33rem;
         object-fit: cover;
+        border-radius: 1em;
     }
     .home .content{
         width: 50rem;

@@ -137,28 +137,6 @@ body{
 
 }
 
-/* .nome{
-    color: var(--cor-secundary-branco);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    font-size: var(--font-size-third);
-    padding-right: 28%;
-    
-}
-
-.nome a{
-    text-decoration: none;
-    color: var(--cor-secundary-branco);
-}
-
-.nome a:hover{
-    text-decoration: none;
-    color: var(--cor-primary-dourado);
-} */
-
 /* Customização home */
 
 .home{
@@ -509,6 +487,12 @@ body{
     border-radius: .5rem;
 }
 
+/* Serviçõs */
+
+.servico .box-container .box{
+    border-radius: 2em;
+}
+
 /* customização de conosco */
 .form form{
     width: 100%;
@@ -630,22 +614,11 @@ body{
     padding: 1rem;
 }
 
- /* .conosco .container .content .form-control{
-    padding: 1rem .75rem;
-}
-.conosco .container .content .messagem .form-floating>.form-control .form-floating>.form-control-plaintext{
-    padding: 1rem .75rem;
-} */
+
 .conosco .content h4{
     font-size: var(--font-size-secundary);
     color: var(--cor-primary-dourado);
 }
-
-/* .conosco .content span{
-    font-size: 1.5rem;
-    color: var(--cor-primary-dourado);
-    align-items: center;
-} */
 
 .conosco .content input, textarea{
     font-size: 1.5rem;
