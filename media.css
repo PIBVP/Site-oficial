@@ -26,6 +26,7 @@
         margin: 0.5rem;
         position: relative;
         padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .servico .heading{
         text-align: center;
@@ -86,7 +87,7 @@
         margin-top: 1rem;
     }
     .conosco .heading{
-        padding-top: 14rem;
+        /* padding-top: 14rem; */
     }
     .equipe{
         display: flex;

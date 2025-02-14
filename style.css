@@ -457,6 +457,32 @@ body{
     color: var(--cor-primary-rgb);
 }
 
+/* Slogan Patronicio */
+.patrocinios{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem;    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.patrocinios .carousel.slide .carousel-inner{
+    display: flex;
+    align-items: center;
+}
+
+.patrocinios .carousel.slide .carousel-inner .carousel-item img{
+    width: 20em;
+
+}
+
+.patrocinios .carousel.slide .carousel-inner .carousel-item a img:hover{
+    transform: scale(1.3);
+}
+
+
 /* customização heading */
 
 .heading{
@@ -464,6 +490,7 @@ body{
     margin: 3rem;
     position: relative;
     padding-top: 0.2rem ;
+    gap: 5em;
 }
 
 .heading::before{
