@@ -60,7 +60,7 @@
     .conosco .container{
         display: flex;
         gap: 0rem;
-        padding-top: 2rem;
+        padding-top: 5rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -106,6 +106,7 @@
         justify-content: center;
         gap: 2rem;
         flex-wrap: nowrap;
+        padding: 1em;
     }
     .professores .box-container .box .content{
         position: absolute;
