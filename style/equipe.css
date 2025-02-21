@@ -23,6 +23,7 @@
     border-radius: 2rem;
 }
 
+
 .servico .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
