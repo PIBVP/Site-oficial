@@ -52,6 +52,7 @@
 .servico .box-container .box .image{
     height: 45rem;
     width: 42rem;
+    padding-top: 2rem;
     overflow: hidden;
     display: flex;
     align-items: center;
