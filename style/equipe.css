@@ -50,7 +50,7 @@
 }
 
 .servico .box-container .box .image{
-    height: 33rem;
+    height: 43rem;
     width: 42rem;
     overflow: hidden;
     display: flex;
@@ -59,7 +59,7 @@
 }
 
 .servico .box-container .box .image img{
-    height: 31rem;
+    height: 100%;
     width: 30rem;
     object-fit: cover;
 }
