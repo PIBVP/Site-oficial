@@ -60,7 +60,7 @@
 
 .servico .box-container .box .image img{
     height: 100%;
-    width: 100%;
+    width: 50%;
     object-fit: cover;
 }
 
